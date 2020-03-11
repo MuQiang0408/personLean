@@ -1,0 +1,62 @@
+.navigation {
+  height: 60px;
+  border-bottom: 3px solid #58bc58;
+  box-shadow: 0 1px 5px #58bc58;
+  cursor: pointer;
+
+  .inner {
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .logo {
+      font-size: 1.2rem;
+      color: green;
+      font-weight: bold;
+      margin-right: 25px;
+    }
+
+    .otherOperate {
+      flex-grow: 1;
+      width: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .operateUl {
+        display: flex;
+        flex-direction: row;
+
+        .everyLi {
+          padding: 3px 10px;
+          color: #666;
+
+          &:hover {
+            color: #333;
+          }
+        }
+      }
+
+      .selectUser {
+        font-size: 14px;
+
+        .operate {
+          padding: 3px;
+          border: 1px solid #58ba58;
+          border-radius: 2px;
+          color: #58bc58;
+
+          &+.operate {
+            margin-left: 15px;
+          }
+
+          &.register {
+            background: #58bc58;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
