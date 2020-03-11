@@ -26,4 +26,9 @@
 
 <style lang="less" scoped>
   @import url('./navigation.less');
+  @import url('./small-xs.less') screen and (max-width: 480px);
+  @import url('./small-x.less') screen and (min-width: 480px) and (max-width: 768px);
+  @import url('./small.less') screen and (min-width: 768px) ;
+  @import url('./middle.less') screen and (min-width: 900px);
+  @import url('./big.less') screen and (min-width: 1200px);
 </style>
